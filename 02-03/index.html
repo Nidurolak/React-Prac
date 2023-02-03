@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <title id="#asd">Example: 2-3</title>
+
+    <script>
+        function Check_Text() {
+            let FirstName = document.getElementById('FirstName').value;
+            let LastName = document.getElementById('LastName').value;
+            let Email = document.getElementById('Email').value;
+            if (FirstName !== null && LastName !== null && Email !== null) {
+                alert("제출되었습니다!")
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <form id="ManyText" onsubmit="Check_Text()" method="get">
+        <div>
+            <b>First name: </b><br><input id="FirstName" type="text" required></br>
+            <b>Last name: </b><br><input id="LastName" type="text" required></br>
+            <b>Email name: </b><br><input id="Email" type="text" required></br>
+            <div>
+                <b>
+                    Gender :
+                    <input type='radio' name='gender' value='male' required />여성
+                    <input type='radio' name='gender' value='male' required />남성
+                </b>
+            </div>
+            <div>
+                <b>
+                    Favorite :
+                    <input type='radio' name='cording' value='HTML' required />HTML
+                    <input type='radio' name='cording' value='JAVA' required />JAVA
+                    <input type='radio' name='cording' value='JavaScript' required />JavaScript
+                </b>
+            </div>
+            <div>
+                <b>
+                    Brower :
+                    <select>
+                        <option value="chrom">크롬</option>
+                        <option value="explor">익스플로러</option>
+                        <option value="firefox">파이어폭스</option>
+                        <option value="brave">브레이브</option>
+                    </select>
+                </b>
+            </div>
+            <div>
+                <b>
+                    <label for="date">Birthday :
+                        <input type="date" id="date" value="연도. 월. 일">
+                    </label>
+                </b>
+            </div>
+            <input type="submit" value="제출">
+    </form>
+</body>
+
+</html>
