@@ -9,7 +9,7 @@
             let FirstName = document.getElementById('FirstName').value;
             let LastName = document.getElementById('LastName').value;
             let Email = document.getElementById('Email').value;
-            if (FirstName !== null && LastName !== null && Email !== null) {
+            if (FirstName !== '' && LastName !== '' && Email !== '') {
                 alert("제출되었습니다!")
             }
         }
@@ -26,8 +26,8 @@
             <div>
                 <b>
                     Gender :
-                    <input type='radio' name='gender' value='male' required />여성
-                    <input type='radio' name='gender' value='male' required />남성
+                    <input type='radio' name='gender' value='Male' required />여성
+                    <input type='radio' name='gender' value='Female' required />남성
                 </b>
             </div>
             <div>
@@ -42,10 +42,10 @@
                 <b>
                     Brower :
                     <select>
-                        <option value="chrom">크롬</option>
-                        <option value="explor">익스플로러</option>
-                        <option value="firefox">파이어폭스</option>
-                        <option value="brave">브레이브</option>
+                        <option value="Chrom">크롬</option>
+                        <option value="Explor">익스플로러</option>
+                        <option value="Firefox">파이어폭스</option>
+                        <option value="Brave">브레이브</option>
                     </select>
                 </b>
             </div>
