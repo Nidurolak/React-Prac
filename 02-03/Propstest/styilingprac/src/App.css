@@ -1,0 +1,23 @@
+.app-style{
+  /*겉 사방 경계 띄우기*/
+  padding: 20px;
+  /*컨테이너 안쪽의 아이템 들에 대한 속성값*/
+  display: flex;
+  /*각 요소가 떨어지는 위치*/
+  gap: 12px;
+
+}
+
+.squareStyle{
+  width: 150px;
+  height: 100px;
+  border: 6px solid gold;
+  background : black;
+  color: gold;
+  border-radius: 10px;
+  /*텍스트를 가운데 정렬*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
