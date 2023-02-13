@@ -1,21 +1,10 @@
 import React, { useState } from "react";
 import './App.css';
-
+import CustomButton from './components/CustomButton.jsx'
 const vegetables = ["감자", "고구마", "오이", "가지", "옥수수", "옥수수"];
 
 
-function CustomButton(props){
-  const{ background,color, onClick, children} = props
-  if(color){
-    return(
-      <button
-      style={{background:background, color: color}}
-      onClick={onClick}>
-      {children}</button>
-    )
-  }
-  return<button onClick={props.onClick}> {props.children}</button>
-}
+
 
 function ShowUser(props){
   return(
@@ -43,7 +32,7 @@ const App = () => {
 
     const addUserHandler = () =>{
       const newUser = {
-        id : users.length +1,
+        id : users[users.length -1].id +1,
         age: age,
         name: name,
       }
